@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Inter", sans-serif;
+    background: #303030;
+    color: #ffffff;
+    padding: 6rem 2rem 5rem;
+}
+
+.titulo-header {
+    font-weight: 500;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+.subtitulo-header {
+    font-weight: 500;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+main {
+    font-family: "Inter", sans-serif;
+}
+
+.sobre {
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.sobre h4 {
+    font-weight: 400;
+}
+
+.secao-1 {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.conteudo {
+    text-align: left;
+}
+
+.conteudo p {
+    width: clamp(20rem, 70vw, 30rem);
+    margin-top: 2rem;
+}
+
+.subtitulo-secao {
+    font-weight: 500;
+    font-size: clamp(1.2rem, 10vw, 1.7rem);
+}
+
+.texto-secao {
+    font-weight: 400;
+    font-size: clamp(0.8rem, 5vw, 1rem);
+    width: clamp(10rem, 12vw, 20rem);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 1rem;
+    width: clamp(20rem, 70vw, 30rem);
+    justify-items: right;
+}
+
+.info {
+    background: #303030;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subtitulo-info {
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+}
+
+#campo-nome {
+    font-family: "Raleway", sans-serif;
+    border-radius: 4px;
+    padding: 0.75rem 6rem 0.75rem 1rem;
+    font-weight: 600;
+}
+
+#campo-email {
+    font-family: "Raleway", sans-serif;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 0.75rem 6rem 0.75rem 1rem;
+}
+
+button {
+    font-family: "Raleway", sans-serif;
+    border: none;
+    background: #C07212;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 15px 1.5rem;
+    width: 10rem;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    .secao-1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo {
+        text-align: center;
+    }
+
+    .conteudo p {
+        text-align: center;
+        width: 24rem;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .secao-1 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .conteudo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .conteudo p {
+        width: clamp(26rem, 70vw, 34rem);
+    }
+}
