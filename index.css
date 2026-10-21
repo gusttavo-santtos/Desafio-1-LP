@@ -79,14 +79,14 @@ img {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 4rem 0;
 }
 
 .subtitulo-info {
     font-family: "Inter", sans-serif;
     color: #ffffff;
     font-weight: 700;
-    font-size: 1.5rem;
-
+    font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 form {
@@ -120,45 +120,4 @@ button {
     padding: 15px 1.5rem;
     width: 10rem;
     margin: auto;
-}
-
-@media (max-width: 500px) {
-    .secao-1 {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .conteudo {
-        text-align: center;
-    }
-
-    .conteudo p {
-        text-align: center;
-        width: 24rem;
-        margin: 2rem auto;
-    }
-}
-
-@media (max-width: 1000px) {
-    .secao-1 {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .conteudo {
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .sobre {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 1000px) {
-    .conteudo p {
-        width: clamp(26rem, 70vw, 34rem);
-    }
 }

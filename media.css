@@ -1,0 +1,40 @@
+@media (max-width: 500px) {
+    .secao-1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo {
+        text-align: center;
+    }
+
+    .conteudo p {
+        text-align: center;
+        width: 24rem;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .secao-1 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .conteudo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .conteudo p {
+        width: clamp(26rem, 70vw, 34rem);
+    }
+}
